@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Musala Website Test Automation Test Suite">
+
+    <listeners>
+        <listener class-name="org.listener.TestListener" />
+        <listener class-name="org.listener.ExecutionListener" />
+    </listeners>
+
+
+    <test name="Musala Website" parallel = "classes" thread-count = "3">
+        <classes>
+            <class name="org.HomePageTests"></class>
+            <class name="org.CareersPageTests"></class>
+            <class name="org.CompanyPageTests"></class>
+        </classes>
+    </test>
+
+
+</suite>
